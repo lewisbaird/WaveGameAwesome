@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerTwoMovement : MonoBehaviour
 {
-    public float speed = 20.0f; //speed that player one moves up and down at
+    public float speed = 20.0f; //speed that the player moves up at
     public float yRangeGoingUp = 20; //The height at which player one is teleported back down
     public float yRangeGoingDown = -1; //The height at which player one is teleported back up
 
@@ -15,7 +15,7 @@ public class PlayerTwoMovement : MonoBehaviour
 
     void Update()
     {
-        //keeping the player in bounds
+        //keeping the player in bounds (teleportation)
         if (transform.position.y < yRangeGoingDown)
         {
             transform.position = new Vector3(transform.position.x, yRangeGoingUp, transform.position.z);
@@ -25,16 +25,16 @@ public class PlayerTwoMovement : MonoBehaviour
             transform.position = new Vector3(transform.position.x, yRangeGoingDown, transform.position.z);
         }
 
-        //movement controls
+        //movement controls/making other player disappear
         if(Input.GetMouseButton(0))
         {
             transform.Translate(Vector3.up * Time.deltaTime * speed);
-            GameObject.Find("Betterwave2").transform.localScale = new Vector3(1, 1, 1);
+            GameObject.Find("WaveUp").transform.localScale = new Vector3(1, 1, 1);
         }
         else
         {
             transform.Translate(Vector3.down * Time.deltaTime * speed);
-            GameObject.Find("Betterwave2").transform.localScale = new Vector3(0, 0, 0);
+            GameObject.Find("WaveUp").transform.localScale = new Vector3(0, 0, 0);
         }
     }
 }
