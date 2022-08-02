@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerTwoMovement : MonoBehaviour
 {
     public float speed = 20.0f; //speed that the player moves up at
-    public float yRangeGoingUp = 20; //The height at which player one is teleported back down
-    public float yRangeGoingDown = -1; //The height at which player one is teleported back up
+    public float yRangeGoingUp = 16; //The height at which player one is teleported back down
+    public float yRangeGoingDown = 4; //The height at which player one is teleported back up
 
     void Start()
     {
