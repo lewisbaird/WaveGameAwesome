@@ -12,16 +12,16 @@ public class Obstacle : MonoBehaviour
     public GameObject RestartButton; //button to restart the game
     public GameObject WaveDown;
     public GameObject WaveUp;
-    private PlayerMovements MovementScript;
-    private PlayerTwoMovements MovementScript2;
+    //private PlayerMovement MovementScript;
+    //private PlayerTwoMovement MovementScript2;
 
     void Start()
     {
-        MovementScript = WaveDown.GetComponent<PlayerMovements>();
-        MovementScript2 = WaveUp.GetComponent<PlayerTwoMovements>();
+        //MovementScript = WaveDown.GetComponent<PlayerMovement>();
+        //MovementScript2 = WaveUp.GetComponent<PlayerTwoMovement>();
     }
 
-    void Update()
+    void OnTriggerEnter(Collider other)
     {
         transform.Translate(Vector3.left * Time.deltaTime * speed);
 
@@ -35,10 +35,8 @@ public class Obstacle : MonoBehaviour
             DeathText.gameObject.SetActive(true);
             RestartButton.gameObject.SetActive(true);
             Destroy(gameObject);
-            MovementScript.DisableScript();
-            MovementScript2.DisableScript();
-
-
+            //MovementScript.DisableScript();
+            //MovementScript2.DisableScript();
         }
     }
     public void RestartGame()
