@@ -4,14 +4,17 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class Obstacle1 : MonoBehaviour
+public class Obstacle : MonoBehaviour
 {
     public float speed = 20.0f; //speed that the obstacles move towards the player
-    private float leftBoundry = -30; //distance at which obstacles get deleted.
-    public TextMeshProUGUI DeathText; //Text that displays when you have died
-    public GameObject RestartButton; //button to restart the game
+    private float leftBoundry = -40; //distance at which obstacles get deleted.
+    //public TextMeshProUGUI DeathText; //Text that displays when you have died
+    //public GameObject restartButton; //button to restart the game
+    //private playerDead = false;
+
     //public GameObject WaveDown;
     //public GameObject WaveUp;
+   
     //private PlayerMovement movementScript;
     //private PlayerTwoMovement movementScript2;
 
@@ -25,10 +28,15 @@ public class Obstacle1 : MonoBehaviour
     {
         transform.Translate(Vector3.right * Time.deltaTime * speed);
 
-        if (transform.position.z < leftBoundry)
+        if (transform.position.x < leftBoundry)
         {
             Destroy(gameObject);
         }
+
+        //if (playerDead = true)
+        //{
+        //    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        //}
     }
 
     void OnTriggerEnter(Collider other)
@@ -36,9 +44,10 @@ public class Obstacle1 : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
-            DeathText.gameObject.SetActive(true);
-            restartButton.gameObject.SetActive(true);
-            Destroy(gameObject);
+            //playerDead = true;
+            //DeathText.gameObject.SetActive(true);
+            //restartButton.gameObject.SetActive(true);
+            //Destroy(gameObject);
             //movementScript.DisableScript();
             //movementScript2.DisableScript();
        }
