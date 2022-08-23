@@ -33,10 +33,10 @@ public class Obstacle : MonoBehaviour
             Destroy(gameObject);
         }
 
-        //if (playerDead = true)
-        //{
-        //    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        //}
+        if (playerDead = true)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 
     void OnTriggerEnter(Collider other)
@@ -52,8 +52,8 @@ public class Obstacle : MonoBehaviour
             //movementScript2.DisableScript();
        }
     }
-    public void RestartGame()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
+    //public void RestartGame()
+    //{
+    //    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    //}
 }
