@@ -26,7 +26,7 @@ public class PlayerTwoMovement : MonoBehaviour
         }
 
         //movement controls/making other player disappear
-        if(Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0))
         {
             transform.Translate(Vector3.up * Time.deltaTime * speed);
             GameObject.Find("WaveUp").transform.localScale = new Vector3(1, 1, 1);

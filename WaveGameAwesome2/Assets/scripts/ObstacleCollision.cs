@@ -8,19 +8,10 @@ public class ObstacleCollision : MonoBehaviour
 {
     public float speed = 20.0f; //speed that the obstacles move towards the player
     private float leftBoundry = -40; //distance at which obstacles get deleted.
-    public TextMeshProUGUI DeathText; //Text that displays when you have died
-    public GameObject restartButton; //button to restart the game
-
-    public GameObject WaveDown;
-    public GameObject WaveUp;
-
-    private PlayerMovement movementScript;
-    private PlayerTwoMovement movementScript2;
 
     void Start()
     {
-        movementScript = WaveDown.GetComponent<PlayerMovement>();
-        movementScript2 = WaveUp.GetComponent<PlayerTwoMovement>();
+
     }
 
     void Update()
@@ -35,16 +26,10 @@ public class ObstacleCollision : MonoBehaviour
     {
 
         if (other.CompareTag("Player"))
+            Debug.Log("Text: ");
+
         {
-            DeathText.gameObject.SetActive(true);
-            restartButton.gameObject.SetActive(true);
-            Destroy(gameObject);
-            //movementScript.DisableScript();
-            //movementScript2.DisableScript();
+            Destroy(other);
         }
-    }
-    public void RestartGame()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

@@ -7,7 +7,6 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 20.0f; //speed that the player moves down at
     public float yRangeGoingUp = 16; //The height at which player one is teleported back down
     public float yRangeGoingDown = 4; //The height at which player one is teleported back up
-    public bool gameOver = false;
 
     void Start()
     {

@@ -632,7 +632,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 310808483}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 46.58, y: 4.48, z: 12.34}
+  m_LocalPosition: {x: 46.58, y: 3.5, z: 12.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -789,8 +789,8 @@ GameObject:
   - component: {fileID: 556100723}
   - component: {fileID: 556100722}
   - component: {fileID: 556100721}
-  - component: {fileID: 556100724}
   - component: {fileID: 556100725}
+  - component: {fileID: 556100726}
   m_Layer: 0
   m_Name: Obstacle
   m_TagString: Untagged
@@ -876,23 +876,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 556100719}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &556100724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 556100719}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdfdffc41e2ba254abe3afb96cb5dc5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 20
-  DeathText: {fileID: 0}
-  restartButton: {fileID: 0}
-  WaveDown: {fileID: 1774912142}
-  WaveUp: {fileID: 1917749996}
 --- !u!54 &556100725
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -909,6 +892,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!114 &556100726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 556100719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdfdffc41e2ba254abe3afb96cb5dc5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 20
 --- !u!1 &584490739
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,8 +917,8 @@ GameObject:
   - component: {fileID: 584490743}
   - component: {fileID: 584490742}
   - component: {fileID: 584490741}
-  - component: {fileID: 584490744}
   - component: {fileID: 584490745}
+  - component: {fileID: 584490746}
   m_Layer: 0
   m_Name: Obstacle2
   m_TagString: Untagged
@@ -1008,23 +1004,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 584490739}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &584490744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 584490739}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdfdffc41e2ba254abe3afb96cb5dc5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 20
-  DeathText: {fileID: 0}
-  restartButton: {fileID: 0}
-  WaveDown: {fileID: 1774912142}
-  WaveUp: {fileID: 1917749996}
 --- !u!54 &584490745
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1041,6 +1020,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!114 &584490746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584490739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdfdffc41e2ba254abe3afb96cb5dc5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 20
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1289,7 +1281,7 @@ GameObject:
   - component: {fileID: 770379955}
   m_Layer: 0
   m_Name: WaveUpHitbox
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2506,7 +2498,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0174aacc4af8ba145a1f9ce3024f8cee, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 2703126807220429972, guid: 0174aacc4af8ba145a1f9ce3024f8cee, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2534,7 +2526,6 @@ MonoBehaviour:
   speed: 30
   yRangeGoingUp: 19
   yRangeGoingDown: 1.5
-  gameOver: 0
 --- !u!4 &1774912146 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0174aacc4af8ba145a1f9ce3024f8cee, type: 3}
