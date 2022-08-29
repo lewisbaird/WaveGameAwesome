@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class ObstacleCollision : MonoBehaviour
+public class Obstacle : MonoBehaviour
 {
     public float speed = 20.0f; //speed that the obstacles move towards the player
     private float leftBoundry = -40; //distance at which obstacles get deleted.
@@ -16,18 +16,11 @@ public class ObstacleCollision : MonoBehaviour
 
     void Update()
     {
+        transform.Translate(Vector3.right * Time.deltaTime * speed);
+
         if (transform.position.x < leftBoundry)
         {
             Destroy(gameObject);
-        }
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
-
-        if (other.CompareTag("Player"))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 

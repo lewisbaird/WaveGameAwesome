@@ -8,7 +8,6 @@ public class Obstacle : MonoBehaviour
 {
     public float speed = 20.0f; //speed that the obstacles move towards the player
     private float leftBoundry = -40; //distance at which obstacles get deleted.
-    private bool playerDead = false;
 
     void Start()
     {
@@ -24,10 +23,6 @@ public class Obstacle : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if (playerDead == true)
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        }
     }
 
 }
