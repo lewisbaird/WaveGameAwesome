@@ -8,7 +8,6 @@ using UnityEngine.SceneManagement;
 public class LevelHard : MonoBehaviour
 {
     public GameObject hardLevelPrefab;
-    private Button button;
 
     void Start()
     {
@@ -20,7 +19,7 @@ public class LevelHard : MonoBehaviour
 
     }
 
-    public void RestartGame()
+    public void SpawnLevel()
     {
         Instantiate(hardLevelPrefab, transform.position, hardLevelPrefab.transform.rotation);
     }
