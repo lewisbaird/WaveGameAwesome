@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class LevelImpossible : MonoBehaviour
 {
@@ -13,9 +16,11 @@ public class LevelImpossible : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Instantiate(impossibleLevelPrefab, transform.position, impossibleLevelPrefab.transform.rotation);
-        }
+
+    }
+
+    public void SpawnLevel()
+    {
+        Instantiate(impossibleLevelPrefab, transform.position, impossibleLevelPrefab.transform.rotation);
     }
 }

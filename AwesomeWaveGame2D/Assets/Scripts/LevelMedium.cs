@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class LevelMedium : MonoBehaviour
 {
@@ -13,9 +16,11 @@ public class LevelMedium : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Instantiate(mediumLevelPrefab, transform.position, mediumLevelPrefab.transform.rotation);
-        }
+
+    }
+
+    public void SpawnLevel()
+    {
+        Instantiate(mediumLevelPrefab, transform.position, mediumLevelPrefab.transform.rotation);
     }
 }
