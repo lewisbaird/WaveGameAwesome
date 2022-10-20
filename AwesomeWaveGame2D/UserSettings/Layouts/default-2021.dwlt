@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Scene
   m_RootView: {fileID: 8}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 50
+  controlID: 108
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 49
+  controlID: 107
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -151,7 +151,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 48
+  controlID: 106
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -317,22 +317,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Materials
+    - Assets/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Materials
+  - Assets/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\19032\Desktop\create with code\WaveGameAwesome\AwesomeWaveGame2D
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 38710000
-    m_LastClickedID: 28984
-    m_ExpandedIDs: 000000002471000000ca9a3b
+    m_SelectedIDs: 28750000
+    m_LastClickedID: 29992
+    m_ExpandedIDs: 000000001a75000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -360,7 +360,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000024710000
+    m_ExpandedIDs: 000000001a750000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -488,9 +488,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 185f0000
-      m_LastClickedID: 24344
-      m_ExpandedIDs: b209fcff7c0dfcff380efcff000ffcffc20ffcff8012fcff5814fcffb016fcff0c25fcffe62afcffbe33fcffce38fcffaa3ffcff5440fcff8443fcff7244fcff6849fcffba4dfcff1c51fcff2456fcffd656fcff8457fcff4858fcff0a59fcffb659fcff665afcff5262fcff426bfcff266dfcff2273fcff3a78fcff3e78fcff4278fcff4a78fcff5278fcff5478fcff5678fcff5878fcff5a78fcff367dfcff447efcffb07ffcff6085fcff6485fcff9e9dfcfff6a1fcff16a7fcff1aa7fcff1ea7fcff16adfcfffaf2fdffb6effeff2efbffff30fbffff345f0000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 48d8ffffcef9ffff30fbffffb6610000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -761,9 +761,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 78.52136, y: 36.24852, z: -2.4141722}
+    m_Target: {x: -10.374324, y: -10.203468, z: -7.913082}
     speed: 2
-    m_Value: {x: 78.52136, y: 36.24852, z: -2.4141722}
+    m_Value: {x: -10.374324, y: -10.203468, z: -7.913082}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -810,13 +810,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.07673666, y: 0.008967168, z: -0.0005875756, w: 0.99705905}
+    m_Target: {x: 0.019803854, y: -0.021007929, z: 0.0005156364, w: 0.9996307}
     speed: 2
-    m_Value: {x: 0.07673298, y: 0.008966738, z: -0.00058754743, w: 0.99701124}
+    m_Value: {x: 0.019802911, y: -0.02100693, z: 0.0005156119, w: 0.9995831}
   m_Size:
-    m_Target: 61.14602
+    m_Target: 24.485147
     speed: 2
-    m_Value: 61.14602
+    m_Value: 24.485147
   m_Ortho:
     m_Target: 0
     speed: 2
