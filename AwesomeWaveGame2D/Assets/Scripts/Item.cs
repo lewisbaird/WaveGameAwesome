@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class Item : MonoBehaviour
 {
-    public float speed = 20.0f; //speed that the obstacles move towards the player
-    private float leftBoundry = -40; //distance at which obstacles get deleted.
+    public float speed = 20.0f; //speed that the items move towards the player
+    private float leftBoundry = -40; //distance at which items get deleted.
 
     void Start()
     {
@@ -16,11 +16,11 @@ public class Item : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(Vector3.right * Time.deltaTime * speed);
+        transform.Translate(Vector3.right * Time.deltaTime * speed); //moves the items to the left towards the player
 
         if (transform.position.x < leftBoundry)
         {
-            Destroy(gameObject);
+            Destroy(gameObject); //destroying the items if they go too far off the screen
         }
     }
 
@@ -29,7 +29,7 @@ public class Item : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
-            Destroy(gameObject);
+            Destroy(gameObject); 
 
         }
     }

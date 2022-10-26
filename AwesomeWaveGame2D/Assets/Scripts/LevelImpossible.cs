@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelImpossible : MonoBehaviour
 {
-    public GameObject impossibleLevelPrefab;
+    public GameObject impossibleLevelPrefab; //attaching level impossible to script
 
     void Start()
     {
@@ -21,6 +21,6 @@ public class LevelImpossible : MonoBehaviour
 
     public void SpawnLevel()
     {
-        Instantiate(impossibleLevelPrefab, transform.position, impossibleLevelPrefab.transform.rotation);
+        Instantiate(impossibleLevelPrefab, transform.position, impossibleLevelPrefab.transform.rotation); //spawns level impossible
     }
 }

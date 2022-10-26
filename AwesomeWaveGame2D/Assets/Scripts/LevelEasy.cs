@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelEasy : MonoBehaviour
 {
-    public GameObject easyLevelPrefab;
+    public GameObject easyLevelPrefab; //attaching level easy to script
 
     void Start()
     {
@@ -21,6 +21,6 @@ public class LevelEasy : MonoBehaviour
 
     public void SpawnLevel()
     {
-        Instantiate(easyLevelPrefab, transform.position, easyLevelPrefab.transform.rotation);
+        Instantiate(easyLevelPrefab, transform.position, easyLevelPrefab.transform.rotation); //spawns level easy
     }
 }

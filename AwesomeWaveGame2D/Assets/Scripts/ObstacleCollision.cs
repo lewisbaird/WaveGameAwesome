@@ -16,18 +16,18 @@ public class ObstacleCollision : MonoBehaviour
 
     void Update()
     {
-        if (transform.position.x < leftBoundry)
+        if (transform.position.x < leftBoundry) //activates if obstacles goes past or onto the set number
         {
-            Destroy(gameObject);
+            Destroy(gameObject); //destroying the obstalces if they go too far off the screen
         }
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other) //if collision happens
     {
 
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player")) //if the collision is with an object that has the tag player on it
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name); //restart the game/scene from the start removing all points and everything
         }
     }
 

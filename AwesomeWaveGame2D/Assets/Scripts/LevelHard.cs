@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelHard : MonoBehaviour
 {
-    public GameObject hardLevelPrefab;
+    public GameObject hardLevelPrefab; //attaching level hard to script
 
     void Start()
     {
@@ -21,6 +21,6 @@ public class LevelHard : MonoBehaviour
 
     public void SpawnLevel()
     {
-        Instantiate(hardLevelPrefab, transform.position, hardLevelPrefab.transform.rotation);
+        Instantiate(hardLevelPrefab, transform.position, hardLevelPrefab.transform.rotation); //spawns level hard
     }
 }

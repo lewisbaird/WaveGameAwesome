@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelMedium : MonoBehaviour
 {
-    public GameObject mediumLevelPrefab;
+    public GameObject mediumLevelPrefab; //attaching level medium to script
 
     void Start()
     {
@@ -21,6 +21,6 @@ public class LevelMedium : MonoBehaviour
 
     public void SpawnLevel()
     {
-        Instantiate(mediumLevelPrefab, transform.position, mediumLevelPrefab.transform.rotation);
+        Instantiate(mediumLevelPrefab, transform.position, mediumLevelPrefab.transform.rotation); //spawns level medium
     }
 }

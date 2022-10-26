@@ -6,12 +6,12 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public int score;
-    public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI scoreText; //how the text is linked to the script
 
     // Start is called before the first frame update
     void Start()
     {
-        score = 0;
+        score = 0; //making the score start at 0
         UpdateScore(0);
     }
 
@@ -24,6 +24,6 @@ public class GameManager : MonoBehaviour
     public void UpdateScore(int scoreToAdd)
     {
         score += scoreToAdd;
-        scoreText.text = "Score: " + score; 
+        scoreText.text = "Score: " + score; //updating the score
     }
 }
