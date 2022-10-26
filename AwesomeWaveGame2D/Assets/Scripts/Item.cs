@@ -8,10 +8,11 @@ public class Item : MonoBehaviour
 {
     public float speed = 20.0f; //speed that the items move towards the player
     private float leftBoundry = -40; //distance at which items get deleted.
+    private GameManager gameManager; //game manager
 
     void Start()
     {
-
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>(); //detecting game manager
     }
 
     void Update()
@@ -29,7 +30,8 @@ public class Item : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
-            Destroy(gameObject); 
+            Destroy(gameObject);
+            gameManager.UpdateScore(1); //adding to score when collecting a item
 
         }
     }
